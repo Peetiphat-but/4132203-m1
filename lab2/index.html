@@ -4,59 +4,83 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+
+    <style>
+        .text-red{
+            color: red;
+        }
+    </style>
+
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-
-    <p>Hello !!!</p>
-    <h1>นายปีติภัทร </h1>
+    <p>Hello World!!</p>
+    <h1>ปีติภัทร บัตรประโคน</h1>
     <h2>660112418015</h2>
-    <p>สาขาวิชา<span style="color:bisque">เทคโนโลยีสารสนเทศ</span></br>
-    <strong>มหาวิทยาลัยราษฎัทบุรีรัมย์</strong>
+    <p>สาขาวิชา<span style="color: blue;">เทคโนโลยีสารสนเทศ</span></p>
+        <strong>มหาวิทยาลัยราชภัฏบุรีรัมย์</strong>
+    </p>
 
-    <ui>
-        <li>หน้าหลัก</li>
+    <ul>
+        <li class="text-red">หน้าหลัก</li>
+        <li class="text-red">เกี่ยวกับฉัน</li>
         <li>เมนู</li>
-        <ui>
-            <li>ซ้าย</li>
-            <li>ขวา</li>
-        </ui>
-    </ui>
+        <ul>
+            <li>1</li>
+            <li>2</li>
+        </ul>
+    </ul>
 
     <hr>
+
     <table border="1">
         <thead>
             <tr>
                 <th>ลำดับ</th>
                 <th>ชื่อ</th>
-                <th>นามสกุล</th>
+                <th>สกุล</th>
             </tr>
         </thead>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>มานะ</td>
+                <td>ใจดี</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>มานี</td>
+                <td>ใจกล้า</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td><a href="https://www.bru.ac.th" target="_blank">BRU</a></td>
+                <td><img src="images/cat.jpg" width="100"></td>
+            </tr>
+        </tbody>
     </table>
-        <tr>
-            <td>1</td>
-            <td>กรรเชียง</td>
-            <td>ทองคำ</td>
-        </tr>
-        <tr>
-            <td>3</td>
-            <td><a href="https://www.bru.ac.th" target="_blank">bru</a></td>
-            <td><img src="image/R.jpeg" height="100"></td>
-        </tr>
-    </tbody>
-</table>
-<form action="" method="get">
-    <div><input type="text" name="first_name"></div>
-    <div><input type="checkbox" name="pre_name" value="นาย"></div>
-    <input type="radio" name="age" value="10-20">
-    <input type="radio" name="age" value="21-40">
-    <select name="class">
-        <option value="1">1</option>
-        <option value="2">2</option>
-    </select>
-    <button type="summit">summit</button>
-    <button type="reset">cancel</button>
-</form>
 
+    <form action="" method="get">
+        <div>
+            <input type="text" name="frist_name">
+        </div>
+        <div>
+            <input type="checkbox" name="pre_name" value="นาย">
+        </div>
+        <div>
+            <input type="radio" name="age" value="10-20">
+            <input type="radio" name="age" value="20-40">
+        </div>
+        <select name="class">
+            <option value="1">1</option>
+            <option value="2">2</option>
+        </select>
+        <div>
+            <button type="submit">Save</button>
+            <button type="reset">Cancle</button>
+        </div>
+       
+    </form>
 
 </body>
 </html>
